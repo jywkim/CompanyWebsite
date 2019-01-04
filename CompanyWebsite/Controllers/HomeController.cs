@@ -48,8 +48,6 @@ namespace CompanyWebsite.Controllers
 
         public ActionResult Job()
         {
-            ViewBag.Message = "Your job page.";
-
             return View();
         }
     }
