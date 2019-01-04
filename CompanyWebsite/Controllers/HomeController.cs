@@ -13,9 +13,30 @@ namespace CompanyWebsite.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult Portfolio()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Your portfolio page.";
+
+            return View();
+        }
+
+        public ActionResult Clients()
+        {
+            ViewBag.Message = "Your clients page.";
+
+            return View();
+        }
+
+        public ActionResult Products()
+        {
+            ViewBag.Message = "Your products page.";
+
+            return View();
+        }
+
+        public ActionResult Services()
+        {
+            ViewBag.Message = "Your services page.";
 
             return View();
         }
@@ -23,6 +44,13 @@ namespace CompanyWebsite.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+
+            return View();
+        }
+
+        public ActionResult Job()
+        {
+            ViewBag.Message = "Your job page.";
 
             return View();
         }
