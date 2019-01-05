@@ -36,8 +36,6 @@ namespace CompanyWebsite.Controllers
 
         public ActionResult Services()
         {
-            ViewBag.Message = "Your services page.";
-
             return View();
         }
 
