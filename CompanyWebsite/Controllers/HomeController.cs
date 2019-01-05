@@ -22,8 +22,6 @@ namespace CompanyWebsite.Controllers
 
         public ActionResult Clients()
         {
-            ViewBag.Message = "Your clients page.";
-
             return View();
         }
 
