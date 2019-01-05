@@ -29,8 +29,6 @@ namespace CompanyWebsite.Controllers
 
         public ActionResult Products()
         {
-            ViewBag.Message = "Your products page.";
-
             return View();
         }
 
