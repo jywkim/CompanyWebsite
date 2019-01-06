@@ -19,8 +19,6 @@ namespace CompanyWebsite.Controllers
 
         public ActionResult Portfolio()
         {
-            ViewBag.Message = "Your portfolio page.";
-
             return View();
         }
 
