@@ -3,65 +3,217 @@
 }
 <h2>@ViewBag.Title</h2>
 
+<style>
+    /* MAIN CONTAINER */
+    .overlay-image {
+        position: relative;
+        width: 100%;
+    }
+
+    /* ORIGINAL IMAGE */
+    .overlay-image .image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    /* ORIGINAL TEXT OVERLAY */
+    .overlay-image .text {
+        color: black;
+        font-size: 30px;
+        line-height: 1.5em;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .overlay-image .hover {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+    }
+
+    /* NEW OVERLAY APPEARANCE ON HOVER */
+    .overlay-image:hover .hover {
+        opacity: 0.5;
+    }
+
+    .overlay-image .normal {
+        transition: .5s ease;
+    }
+    .overlay-image:hover .normal {
+        opacity: 0;
+    }
+    .overlay-image .hover {
+        background-color: white;
+    }
+</style>
+
 <div class="row">
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/BingoLottoFun.png" alt="Bingo Lotto Fun" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/BingoLottoFun.png" alt="Bingo Lotto Fun" />
+            <div class="hover">
+                <div class="text">Bingo Lotto Fun</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/BodyPulse.jpg" alt="Body Pulse" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/BodyPulse.jpg" alt="Body Pulse" />
+            <div class="hover">
+                <div class="text">Body Pulse</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/BroadwayHealthAndVitality.jpg" alt="Broadway Health And Vitality" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/BroadwayHealthAndVitality.jpg" alt="Broadway Health And Vitality" />
+            <div class="hover">
+                <div class="text">Broadway Health And Vitality</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/CarlsonWagonlit1.png" alt="Carlson Wagonlit" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/CarlsonWagonlit1.png" alt="Carlson Wagonlit" />
+            <div class="hover">
+                <div class="text">Carlson Wagonlit</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/CaymanFreelancer1.png" alt="Cayman Freelancer" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/CaymanFreelancer1.png" alt="Cayman Freelancer" />
+            <div class="hover">
+                <div class="text">Cayman Freelancer</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/CreateInfiniteHealing.jpg" alt="Create Infinite Healing" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/CreateInfiniteHealing.jpg" alt="Create Infinite Healing" />
+            <div class="hover">
+                <div class="text">Create Infinite Healing</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/FitFix1.png" alt="Fit Fix" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/FitFix1.png" alt="Fit Fix" />
+            <div class="hover">
+                <div class="text">Fit Fix</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/GICWealthManagement1.png" alt="GIC Wealth Management" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/GICWealthManagement1.png" alt="GIC Wealth Management" />
+            <div class="hover">
+                <div class="text">GIC Wealth Management</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/InMyLanguage.jpg" alt="In My Language" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/InMyLanguage.jpg" alt="In My Language" />
+            <div class="hover">
+                <div class="text">In My Language</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/MyClientSchedule1.jpg" alt="My Client Schedule" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/MyClientSchedule1.jpg" alt="My Client Schedule" />
+            <div class="hover">
+                <div class="text">My Client Schedule</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/Nettwerk1.png" alt="Nettwerk" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/Nettwerk1.png" alt="Nettwerk" />
+            <div class="hover">
+                <div class="text">Nettwerk</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/Pet.jpg" alt="Pet" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/Pet.jpg" alt="Pet" />
+            <div class="hover">
+                <div class="text">Pet</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/PetPickup1.png" alt="Pet Pickup" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/PetPickup1.png" alt="Pet Pickup" />
+            <div class="hover">
+                <div class="text">Pet Pickup</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/RaceAnalyser.jpg" alt="Race Analyser" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/RaceAnalyser.jpg" alt="Race Analyser" />
+            <div class="hover">
+                <div class="text">Race Analyser</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/Revizit1.jpg" alt="Revizit" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/Revizit1.jpg" alt="Revizit" />
+            <div class="hover">
+                <div class="text">Revizit</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/SmartChoice.png" alt="Smart Choice" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/SmartChoice.png" alt="Smart Choice" />
+            <div class="hover">
+                <div class="text">Smart Choice</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/Sommers.jpg" alt="Sommer's" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/Sommers.jpg" alt="Sommer's" />
+            <div class="hover">
+                <div class="text">Sommer's</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/VintageCapitalCorporation.jpg" alt="Vintage Capital Corporation" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/VintageCapitalCorporation.jpg" alt="Vintage Capital Corporation" />
+            <div class="hover">
+                <div class="text">Vintage Capital Corporation</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/WCCMA1.png" alt="WCCMA" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/WCCMA1.png" alt="WCCMA" />
+            <div class="hover">
+                <div class="text">WCCMA</div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3">
-        <img class="img-thumbnail" src="~/Content/Images/YongeAndDavisvilleTherapy.jpg" alt="Yonge And Davisville Therapy" />
+        <div class="overlay-image">
+            <img class="img-thumbnail" src="~/Content/Images/YongeAndDavisvilleTherapy.jpg" alt="Yonge And Davisville Therapy" />
+            <div class="hover">
+                <div class="text">Yonge And Davisville Therapy</div>
+            </div>
+        </div>
     </div>
 </div>
