@@ -7,6 +7,7 @@ using CompanyWebsite.Models;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
+using CompanyWebsite.Auth;
 
 namespace CompanyWebsite.Controllers
 {
@@ -63,10 +64,12 @@ namespace CompanyWebsite.Controllers
 
                 using (var smtp = new SmtpClient())
                 {
+                    CredentialContext credentialContext = new CredentialContext();
+
                     var credential = new NetworkCredential
                     {
-                        UserName = "mailtrap username",
-                        Password = "mailtrap password"
+                        UserName = credentialContext.Mailtrap_Username,
+                        Password = credentialContext.Mailtrap_Password
                     };
                     smtp.Credentials = credential;
                     smtp.Host = "smtp.mailtrap.io";
