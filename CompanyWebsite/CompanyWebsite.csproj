@@ -212,6 +212,8 @@
     <Content Include="Content\Images\PetPickup2.png" />
     <Content Include="Content\Images\PetPickup3.png" />
     <Content Include="Content\Images\RaceAnalyser.jpg" />
+    <Content Include="Content\Images\Rea.jpg" />
+    <Content Include="Content\Images\Rea50.jpg" />
     <Content Include="Content\Images\Revizit1.jpg" />
     <Content Include="Content\Images\SmartChoice.png" />
     <Content Include="Content\Images\SmartChoice2.png" />
