@@ -203,6 +203,9 @@
     <Content Include="Content\Images\Clients\LondonHealthSciencesCentre.JPG" />
     <Content Include="Content\Images\Clients\MassageTherapyStudio.png" />
     <Content Include="Content\Images\Clients\Nettwerk.jpg" />
+    <Content Include="Content\Images\Clients\Nettwerk2.png" />
+    <Content Include="Content\Images\Clients\Nettwerk3.png" />
+    <Content Include="Content\Images\Clients\Nettwerk4.png" />
     <Content Include="Content\Images\Clients\OCASI.png" />
     <Content Include="Content\Images\Clients\PetPickup.png" />
     <Content Include="Content\Images\Clients\SmartChoice.png" />
