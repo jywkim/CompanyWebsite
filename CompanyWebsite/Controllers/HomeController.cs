@@ -43,7 +43,7 @@ namespace CompanyWebsite.Controllers
             return View();
         }
 
-        public ActionResult Job()
+        public ActionResult Careers()
         {
             return View();
         }
