@@ -1,7 +1,12 @@
 ﻿@{
     ViewBag.Title = "Products";
 }
-<h2>@ViewBag.Title</h2>
+
+<div class="jumbotron">
+    <h1>Products</h1>
+    <p class="lead">Get the most out of your business by saving time and money.</p>
+    <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
 
 <div class="row">
     <div class="col-md-4">
@@ -72,3 +77,10 @@
         </p>
     </div>
 </div>
+
+<style>
+    .jumbotron {
+        background: url(../Content/Images/Jumbotron/Beach.jpg) no-repeat top left;
+        background-size: cover;
+    }
+</style>

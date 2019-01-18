@@ -1,7 +1,12 @@
 ﻿@{
     ViewBag.Title = "Clients";
 }
-<h2>Some Of Our Clients</h2>
+
+<div class="jumbotron">
+    <h1>Clients</h1>
+    <p class="lead">Helping customers succeed and run their business.</p>
+    <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
 
 <div class="clients">
     <a href="https://alphatogo.com/"><img class="img-fluid" src="~/Content/Images/Clients/AlphaToGo.jpg" alt="AlphaToGo" /></a>
@@ -32,5 +37,10 @@
 
     .clients {
         text-align: center;
+    }
+
+    .jumbotron {
+        background: url(../Content/Images/Jumbotron/Buildings.jpg) no-repeat top left;
+        background-size: cover;
     }
 </style>

@@ -185,7 +185,9 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\Images\Balloons.jpg" />
+    <Content Include="Content\Images\Jumbotron\Balloons.jpg" />
+    <Content Include="Content\Images\Jumbotron\Beach.jpg" />
+    <Content Include="Content\Images\Jumbotron\Buildings.jpg" />
     <Content Include="Content\Images\Clients\AlphaToGo.jpg" />
     <Content Include="Content\Images\Clients\AndersonCommericalProperty.jpg" />
     <Content Include="Content\Images\Clients\AttorneyGeneral.png" />
@@ -212,7 +214,8 @@
     <Content Include="Content\Images\Clients\SommersLaw.gif" />
     <Content Include="Content\Images\Clients\SumoLounge.jpg" />
     <Content Include="Content\Images\Clients\VirtualRealEstate.png" />
-    <Content Include="Content\Images\Mountains.jpg" />
+    <Content Include="Content\Images\Jumbotron\Mountains.jpg" />
+    <Content Include="Content\Images\Jumbotron\Trees.jpg" />
     <Content Include="Content\Images\Portfolio\BingoLottoFun.png" />
     <Content Include="Content\Images\Portfolio\BodyPulse.jpg" />
     <Content Include="Content\Images\Portfolio\BroadwayHealthAndVitality.jpg" />
