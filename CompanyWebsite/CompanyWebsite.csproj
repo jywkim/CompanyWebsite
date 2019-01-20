@@ -185,6 +185,7 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Jumbotron\Bubble.jpg" />
     <Content Include="Content\Images\Jumbotron\Balloons.jpg" />
     <Content Include="Content\Images\Jumbotron\Beach.jpg" />
     <Content Include="Content\Images\Jumbotron\Buildings.jpg" />
@@ -214,6 +215,7 @@
     <Content Include="Content\Images\Clients\SommersLaw.gif" />
     <Content Include="Content\Images\Clients\SumoLounge.jpg" />
     <Content Include="Content\Images\Clients\VirtualRealEstate.png" />
+    <Content Include="Content\Images\Jumbotron\Crop.jpg" />
     <Content Include="Content\Images\Jumbotron\Mountains.jpg" />
     <Content Include="Content\Images\Jumbotron\Trees.jpg" />
     <Content Include="Content\Images\Portfolio\BingoLottoFun.png" />
@@ -254,6 +256,7 @@
     <Content Include="Content\Images\Portfolio\WCCMA2.png" />
     <Content Include="Content\Images\Portfolio\WCCMA3.png" />
     <Content Include="Content\Images\Portfolio\YongeAndDavisvilleTherapy.jpg" />
+    <Content Include="Content\Images\Jumbotron\Plant.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
