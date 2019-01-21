@@ -14,14 +14,13 @@
         <address>
             50 St. Clair Ave East, 3rd Floor<br />
             Toronto, ON Canada M4T 1M9<br />
-            <abbr title="Phone">P:</abbr>
-            (416) 533-3777
+            416-533-3777
         </address>
 
         <address>
-            <strong>Sales:</strong>   <a href="mailto:Sales@reainc.net">Sales@reainc.net</a><br />
-            <strong>Support:</strong> <a href="mailto:Support@reainc.net">Support@reainc.net</a><br />
-            <strong>Webmaster:</strong> <a href="mailto:Webmaster@reainc.net">Webmaster@reainc.net</a>
+            <i class="fas fa-smile-beam"></i><a href="mailto:Sales@reainc.net"> sales@reainc.net</a><br />
+            <i class="fas fa-headset"></i><a href="mailto:Support@reainc.net"> support@reainc.net</a><br />
+            <i class="fas fa-tools"></i><a href="mailto:Webmaster@reainc.net"> webmaster@reainc.net</a>
         </address>
     </div>
     <div class="col-md-4">
@@ -30,13 +29,13 @@
             @Html.AntiForgeryToken()
                 @Html.TextBoxFor(m => m.FromName, new { placeholder = "Your Name", @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.FromName)
-
+                
                 @Html.TextBoxFor(m => m.FromEmail, new { placeholder = "Your Email", @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.FromEmail)
-
-                @Html.TextAreaFor(m => m.Message, new { placeholder = "Your Message", @class = "form-control" })
+                
+                @Html.TextAreaFor(m => m.Message, new { placeholder = "Your Message", id = "form-message", @class = "form-control" })
                 @Html.ValidationMessageFor(m => m.Message)
-
+                
                 <input type="submit" class="btn btn-default" value="Send" />
         }
 
@@ -50,5 +49,13 @@
     .jumbotron {
         background: url(../Content/Images/Jumbotron/Crop.jpg) no-repeat top left;
         background-size: cover;
+    }
+
+    address {
+        font-size: 21px;
+    }
+
+    #form-message {
+        min-height: 100px;
     }
 </style>
