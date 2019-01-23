@@ -3,60 +3,108 @@
 }
 
 <style>
+    .jumbotron {
+        background: url(../Content/Images/Jumbotron/Mountains.jpg) no-repeat top left;
+        background-size: cover;
+    }
+
+    * {
+        box-sizing: border-box
+    }
+
+    .mySlides1, .mySlides2 {
+        display: none
+    }
+
+    img {
+        vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a grey background color */
+    .prev:hover, .next:hover {
+        background-color: #f1f1f1;
+        color: black;
+    }
+
+
+
     /* MAIN CONTAINER */
     .overlay-image {
         position: relative;
         width: 100%;
     }
+        /* ORIGINAL IMAGE */
+        .overlay-image .image {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+        /* ORIGINAL TEXT OVERLAY */
+        .overlay-image .text {
+            color: black;
+            font-size: 30px;
+            line-height: 1.5em;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
 
-    /* ORIGINAL IMAGE */
-    .overlay-image .image {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
+        .overlay-image .hover {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+        }
+        /* NEW OVERLAY APPEARANCE ON HOVER */
+        .overlay-image:hover .hover {
+            opacity: 0.5;
+        }
 
-    /* ORIGINAL TEXT OVERLAY */
-    .overlay-image .text {
-        color: black;
-        font-size: 30px;
-        line-height: 1.5em;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 100%;
-    }
+        .overlay-image .normal {
+            transition: .5s ease;
+        }
 
-    .overlay-image .hover {
-        position: absolute;
-        top: 0;
-        height: 100%;
-        width: 100%;
-        opacity: 0;
-        transition: .5s ease;
-    }
+        .overlay-image:hover .normal {
+            opacity: 0;
+        }
 
-    /* NEW OVERLAY APPEARANCE ON HOVER */
-    .overlay-image:hover .hover {
-        opacity: 0.5;
-    }
-
-    .overlay-image .normal {
-        transition: .5s ease;
-    }
-    .overlay-image:hover .normal {
-        opacity: 0;
-    }
-    .overlay-image .hover {
-        background-color: white;
-    }
-
-    .jumbotron {
-        background: url(../Content/Images/Jumbotron/Mountains.jpg) no-repeat top left;
-        background-size: cover;
-    }
+        .overlay-image .hover {
+            background-color: white;
+        }
 </style>
 
 <div class="jumbotron">
@@ -64,6 +112,90 @@
     <p class="lead">Take a look at some of our database business applications.</p>
     <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
+
+<div class="slideshow-container">
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/BingoLottoFun.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/BodyPulse.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/BroadwayHealthAndVitality.jpg" style="width:100%">
+    </div>
+
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/CarlsonWagonlit1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/CaymanFreelancer1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/FitFix1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/GICWealthManagement1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/InMyLanguage.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/MyClientSchedule1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/Nettwerk1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/Pet.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/PetPickup1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/RaceAnalyser.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/Revizit1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/SmartChoice.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/Sommers.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/VintageCapitalCorporation.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/WCCMA1.png" style="width:100%">
+    </div>
+
+    <div class="mySlides1">
+        <img src="~/Content/Images/Portfolio/YongeAndDavisvilleTherapy.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+<br />
 
 <div class="row">
     <div class="col-md-3">
@@ -227,3 +359,25 @@
         </div>
     </div>
 </div>
+
+<script>
+    var slideIndex = [1, 1];
+    var slideId = ["mySlides1", "mySlides2"]
+    showSlides(1, 0);
+    showSlides(1, 1);
+
+    function plusSlides(n, no) {
+        showSlides(slideIndex[no] += n, no);
+    }
+
+    function showSlides(n, no) {
+        var i;
+        var x = document.getElementsByClassName(slideId[no]);
+        if (n > x.length) { slideIndex[no] = 1 }
+        if (n < 1) { slideIndex[no] = x.length }
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        x[slideIndex[no] - 1].style.display = "block";
+    }
+</script>
