@@ -224,6 +224,8 @@
     <Content Include="Content\Images\Jumbotron\Code.jpg" />
     <Content Include="Content\Images\Jumbotron\Crop.jpg" />
     <Content Include="Content\Images\Jumbotron\Mountains.jpg" />
+    <Content Include="Content\Images\Jumbotron\PC1.jpg" />
+    <Content Include="Content\Images\Jumbotron\PC2.jpg" />
     <Content Include="Content\Images\Jumbotron\Trees.jpg" />
     <Content Include="Content\Images\Portfolio\BingoLottoFun.png" />
     <Content Include="Content\Images\Portfolio\BodyPulse.jpg" />
