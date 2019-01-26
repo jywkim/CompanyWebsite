@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
+using System.Web.UI;
+using CompanyWebsite.Models;
 
 namespace CompanyWebsite.Controllers
 {
@@ -12,6 +15,33 @@ namespace CompanyWebsite.Controllers
         public ActionResult Index()
         {
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult Authorize(CompanyWebsite.Models.User user)
+        {
+            using (CompanyWebsiteEntities db = new CompanyWebsiteEntities())
+            {
+                var userDetails = db.Users.Where(x => x.UserName == user.UserName && x.UserPass == user.UserPass).FirstOrDefault();
+                if (userDetails == null)
+                {
+                    return RedirectToAction("Index", "Login");
+                }
+                else
+                {
+                    Session["userID"] = userDetails.UserID;
+                    Session["userName"] = userDetails.UserName;
+                    Session["userFirstName"] = userDetails.UserFirstName;
+                    return RedirectToAction("Index", "Practice");
+                }
+            }
+        }
+
+        public ActionResult Logout()
+        {
+            int userId = (int)Session["userID"];
+            Session.Abandon();
+            return RedirectToAction("Index", "Login");
         }
 
         // GET: Login/Details/5

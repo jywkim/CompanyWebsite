@@ -1,4 +1,4 @@
-﻿
+﻿@model CompanyWebsite.Models.User
 @{
     ViewBag.Title = "Login";
 }
@@ -9,9 +9,42 @@
     <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
+<div id="login-div">
+    @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
+    {
+        <table>
+            <tr>
+                <td>
+                    @Html.LabelFor(model => model.UserName)
+                </td>
+                <td>
+                    @Html.EditorFor(model => model.UserName)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(model => model.UserPass)</td>
+                <td>@Html.EditorFor(model => model.UserPass)</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" name="submit" value="Login" />
+                    <input type="reset" name="reset" value="Clear" />
+                </td>
+            </tr>
+        </table>
+    }
+</div>
+
 <style>
     .jumbotron {
         background: url(../Content/Images/Jumbotron/PC2.jpg) no-repeat top left;
         background-size: cover;
+    }
+
+    #login-div {
+        position: absolute;
+        left: 40%;
+        top: 40%;
     }
 </style>
