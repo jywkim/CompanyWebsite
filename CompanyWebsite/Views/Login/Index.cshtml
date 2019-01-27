@@ -5,35 +5,31 @@
 
 <div class="jumbotron">
     <h1>Login</h1>
-    <p class="lead">A simple login.</p>
-    <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
-
-<div id="login-div">
-    @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
-    {
-        <table>
-            <tr>
-                <td>
-                    @Html.LabelFor(model => model.UserName)
-                </td>
-                <td>
-                    @Html.EditorFor(model => model.UserName)
-                </td>
-            </tr>
-            <tr>
-                <td>@Html.LabelFor(model => model.UserPass)</td>
-                <td>@Html.EditorFor(model => model.UserPass)</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>
-                    <input type="submit" name="submit" value="Login" />
-                    <input type="reset" name="reset" value="Clear" />
-                </td>
-            </tr>
-        </table>
-    }
+    <div id="login-div">
+        @using (Html.BeginForm("Authorize", "Login", FormMethod.Post))
+        {
+            <table>
+                <tr>
+                    <td>
+                        @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { placeholder = "Username", @class = "form-control" } })
+                    </td>
+                </tr>
+                <tr class="blank-row"><td></td></tr>
+                <tr>
+                    <td>
+                        @Html.EditorFor(model => model.UserPass, new { htmlAttributes = new { placeholder = "Password", type = "password", @class = "form-control" } })
+                    </td>
+                </tr>
+                <tr class="blank-row"><td></td></tr>
+                <tr>
+                    <td>
+                        <input type="submit" name="submit" value="Login" class="btn btn-primary btn-group-sm" />
+                        <input type="reset" name="reset" value="Clear" class="btn btn-primary btn-group-sm" />
+                    </td>
+                </tr>
+            </table>
+        }
+    </div>
 </div>
 
 <style>
@@ -42,9 +38,7 @@
         background-size: cover;
     }
 
-    #login-div {
-        position: absolute;
-        left: 40%;
-        top: 40%;
+    .blank-row {
+        height: 5px !important;
     }
 </style>
