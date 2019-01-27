@@ -18,7 +18,7 @@ namespace CompanyWebsite.Controllers
         }
 
         [HttpPost]
-        public ActionResult Authorize(CompanyWebsite.Models.User user)
+        public ActionResult Authorize(User user)
         {
             using (CompanyWebsiteEntities db = new CompanyWebsiteEntities())
             {
