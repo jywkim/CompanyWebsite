@@ -215,6 +215,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Images\Clients\AmericanPool.jpg" />
     <Content Include="Content\Images\Clients\CarlsonWagonlit2.png" />
+    <Content Include="Content\Images\Clients\CSG.png" />
     <Content Include="Content\Images\Clients\LHSC.gif" />
     <Content Include="Content\Images\Clients\WCCMA.jpg" />
     <Content Include="Content\Images\Jumbotron\Bubble.jpg" />
