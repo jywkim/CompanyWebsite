@@ -126,6 +126,21 @@
         <div class="box" id="box24"></div>
     </div>
 </div>
+<br />
+<br />
+<div class="row">
+    <div class="col-md-4">
+        <div class="box" id="box25"></div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="box" id="box26"></div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="box" id="box27"></div>
+    </div>
+</div>
 
 <style>
     .jumbotron {
@@ -146,7 +161,7 @@
     }
 
     #box3 {
-        background-image: url("/Content/Images/Clients/LondonHealthSciencesCentre.JPG");
+        background-image: url("/Content/Images/Clients/Roghnu.png");
     }
 
     #box4 {
@@ -158,7 +173,7 @@
     }
 
     #box6 {
-        background-image: url("/Content/Images/Clients/CanadianChildrenBook1.png");
+        background-image: url("/Content/Images/Clients/LondonHealthSciencesCentre.JPG");
     }
 
     #box7 {
@@ -170,7 +185,7 @@
     }
 
     #box9 {
-        background-image: url("/Content/Images/Clients/Nettwerk.jpg");
+        background-image: url("/Content/Images/Clients/CanadianChildrenBook1.png");
     }
 
     #box10 {
@@ -222,25 +237,37 @@
     }
 
     #box22 {
-        background-image: url("/Content/Images/Clients/PetPickup.png");
+        background-image: url("/Content/Images/Clients/Nettwerk2.png");
     }
 
     #box23 {
-        background-image: url("/Content/Images/Clients/CentralRoof.jpg");
+        background-image: url("/Content/Images/Clients/AFS.png");
     }
 
     #box24 {
+        background-image: url("/Content/Images/Clients/ADCO.png");
+    }
+
+    #box25 {
+        background-image: url("/Content/Images/Clients/PetPickup.png");
+    }
+
+    #box26 {
+        background-image: url("/Content/Images/Clients/CentralRoof.jpg");
+    }
+
+    #box27 {
         background-image: url("/Content/Images/Clients/ISE.png");
     }
 
     .box {
         background-position: center;
         background-size: contain;
-        background-repeat:no-repeat;
+        background-repeat: no-repeat;
         position: relative;
         display: inline-block;
         width: 300px;
-        height: 200px;
+        height: 134px;
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
@@ -249,27 +276,27 @@
         transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
-    .box::after {
-        content: "";
-        border-radius: 5px;
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
+        .box::after {
+            content: "";
+            border-radius: 5px;
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            opacity: 0;
+            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
 
-    .box:hover {
-        -webkit-transform: scale(1.25, 1.25);
-        transform: scale(1.25, 1.25);
-    }
+        .box:hover {
+            -webkit-transform: scale(1.25, 1.25);
+            transform: scale(1.25, 1.25);
+        }
 
-    .box:hover::after {
-        opacity: 1;
-    }
+            .box:hover::after {
+                opacity: 1;
+            }
 </style>
