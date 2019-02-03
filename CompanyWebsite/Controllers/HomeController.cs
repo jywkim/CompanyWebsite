@@ -84,6 +84,11 @@ namespace CompanyWebsite.Controllers
 
         public ActionResult Sent()
         {
+            if (Request.UrlReferrer == null)
+            {
+                return RedirectToAction("Contact");
+            }
+
             return View();
         }
     }
