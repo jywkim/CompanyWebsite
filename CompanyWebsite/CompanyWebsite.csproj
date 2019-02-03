@@ -327,6 +327,36 @@
     <Content Include="Models\CompanyWebsiteModel.edmx.diagram">
       <DependentUpon>CompanyWebsiteModel.edmx</DependentUpon>
     </Content>
+    <Content Include="fonts\SF\SFProDisplay-Black.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-BlackItalic.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-Bold.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-BoldItalic.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-Heavy.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-HeavyItalic.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-Light.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-LightItalic.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-Medium.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-MediumItalic.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-Regular.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-RegularItalic.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-Semibold.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-SemiboldItalic.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-Thin.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-ThinItalic.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-Ultralight.ttf" />
+    <Content Include="fonts\SF\SFProDisplay-UltralightItalic.ttf" />
+    <Content Include="fonts\SF\SFProText-Bold.ttf" />
+    <Content Include="fonts\SF\SFProText-BoldItalic.ttf" />
+    <Content Include="fonts\SF\SFProText-Heavy.ttf" />
+    <Content Include="fonts\SF\SFProText-HeavyItalic.ttf" />
+    <Content Include="fonts\SF\SFProText-Light.ttf" />
+    <Content Include="fonts\SF\SFProText-LightItalic.ttf" />
+    <Content Include="fonts\SF\SFProText-Medium.ttf" />
+    <Content Include="fonts\SF\SFProText-MediumItalic.ttf" />
+    <Content Include="fonts\SF\SFProText-Regular.ttf" />
+    <Content Include="fonts\SF\SFProText-RegularItalic.ttf" />
+    <Content Include="fonts\SF\SFProText-Semibold.ttf" />
+    <Content Include="fonts\SF\SFProText-SemiboldItalic.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

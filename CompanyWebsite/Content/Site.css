@@ -22,3 +22,12 @@ select,
 textarea {
     max-width: 280px;
 }
+
+@font-face {
+    font-family: 'SFProDisplay-Light';
+    src: url('/fonts/SF/SFProDisplay-Light.ttf') format("truetype");
+}
+
+* {
+    font-family: 'SFProDisplay-Light';
+}
