@@ -1,4 +1,5 @@
-﻿@{
+﻿@model CompanyWebsite.Models.EmailFormModel
+@{
     ViewBag.Title = "Index";
     if (Session["userID"] == null)
     {
@@ -15,213 +16,327 @@
     <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <div class="box" id="box1"></div>
+<div class="full">
+    <div class="jumbotron" id="jumbotron-home">
+        <h1>REA Inc.</h1>
+        <p class="lead">IT Consulting, Web Applications, Computer Support.  We Get I.T.</p>
+        <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 
-    <div class="col-md-4">
-        <div class="box" id="box2"></div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box" id="box3"></div>
+    <div class="row">
+        <div class="col-md-3">
+            <p class="follow"><i class="fas fa-comments fa-10x"></i></p>
+            <h3>IT Consulting</h3>
+            <p class="follow">
+                REA Inc. does more than just sell technology – we combine small business and technology
+                consulting expertise to develop IT solutions to your real business challenges.
+            </p>
+            <p class="follow"><a class="btn btn-primary btn-sm" href="../Home">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <p class="follow"><i class="fas fa-code fa-10x"></i></p>
+            <h3>Website Design</h3>
+            <p class="follow">
+                A professional web designer is a person who manages to ignore his personal likes and dislikes
+                and creates the layout that satisfies and attracts the audience of the future site.
+            </p>
+            <p class="follow"><a class="btn btn-primary btn-sm" href="../Home">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <p class="follow"><i class="fas fa-table fa-10x"></i></p>
+            <h3>Application Design</h3>
+            <p class="follow">
+                It is important to make the correct decisions during the application design phase. At REA inc.
+                we offer the most robust, state of the art application design solutions.
+            </p>
+            <p class="follow"><a class="btn btn-primary btn-sm" href="../Home">Learn more &raquo;</a></p>
+        </div>
+        <div class="col-md-3">
+            <p class="follow"><i class="fas fa-memory fa-10x"></i></p>
+            <h3>Hardware Installation</h3>
+            <p class="follow">
+                With advancing technology, the computer peripherals are upgraded often. We provide hardware
+                installation services to help you get the maximum value from your PC systems.
+            </p>
+            <p class="follow"><a class="btn btn-primary btn-sm" href="../Home">Learn more &raquo;</a></p>
+        </div>
     </div>
 </div>
-<br />
-<br />
-<div class="row">
-    <div class="col-md-4">
-        <div class="box" id="box4"></div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box" id="box5"></div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box" id="box6"></div>
+<div class="full">
+    <div class="jumbotron" id="jumbotron-portfolio">
+        <h1>Portfolio</h1>
+        <p class="lead">Take a look at some of our database business applications.</p>
+        <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 </div>
-<br />
-<br />
-<div class="row">
-    <div class="col-md-4">
-        <div class="box" id="box7"></div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box" id="box8"></div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box" id="box9"></div>
+<div class="full">
+    <div class="jumbotron" id="jumbotron-clients">
+        <h1>Clients</h1>
+        <p class="lead">Helping customers succeed and run their business.</p>
+        <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 </div>
-<br />
-<br />
-<div class="row">
-    <div class="col-md-4">
-        <div class="box" id="box10"></div>
+<div class="full">
+    <div class="jumbotron" id="jumbotron-products">
+        <h1>Products</h1>
+        <p class="lead">Get the most out of your business by saving time and money.</p>
+        <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 
-    <div class="col-md-4">
-        <div class="box" id="box11"></div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box" id="box12"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>REVIZIT</h3>
+            <p>
+                An online SAAS project management system offering for small businesses: consultant and employee time
+                tracking, task and project management, and client invoice preparation/generation.
+                <br /><br />
+                Please visit <a href="https://revizit.com/register.a5w">https://REVIZIT.com/register.a5w</a> to register for an online demo, and for further
+                information on our software solution for small to mid-sized businesses.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>MyClientSchedule</h3>
+            <p>
+                An online SAAS patient/client scheduling/billing software for practitioners requiring a cost
+                effective and simple solution to manage patients.
+                <br /><br />
+                Please visit: <a href="https://MyClientSchedule.com/">https://MyClientSchedule.com</a> to register for an online demo, and for further
+                information on our software solution for small to mid-sized practitioners.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>Alpha Software Add-ons</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>REA Automailer</h3>
+            <p>
+                Email queuing package for Alpha 5(tm) software<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>REA CHASE API</h3>
+            <p>
+                CHASE(tm) Orbital Payments(tm) integration tool for Alpha 5(tm) software<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>REA ILS</h3>
+            <p>
+                Integrated Licensing System<br />
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.
+            </p>
+        </div>
     </div>
 </div>
-<br />
-<br />
-<div class="row">
-    <div class="col-md-4">
-        <div class="box" id="box13"></div>
+<div class="full">
+    <div class="jumbotron" id="jumbotron-services">
+        <h1>Services</h1>
+        <p class="lead">Reach your goals and gain an advantage.</p>
+        <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 
-    <div class="col-md-4">
-        <div class="box" id="box14"></div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="box" id="box15"></div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>IT Consulting <i class="fas fa-comments"></i></h3>
+            <p>
+                REA Inc. combines small business and technology consulting expertise to develop IT solutions to your real
+                business challenges.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>Application Design <i class="fas fa-table"></i></h3>
+            <p>
+                It is important to make the correct decisions during the application design phase.  At REA inc. we offer robust,
+                state of the art application design solutions.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>Programming Skills <i class="fas fa-code"></i></h3>
+            <p>
+                We have experience with Coldfusion, Microsoft .NET, C#, VB.NET, C++, VB6, PHP, MySQL, Microsoft SQL, Pervasive SQL.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>Troubleshooting <i class="fas fa-search"></i></h3>
+            <p>
+                Have malware or a virus? Or is your computer just running slow? Give us a call and we'll help figure out what the
+                problem is.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>SUSTAIN <i class="fas fa-gavel"></i></h3>
+            <p>
+                SUSTAIN Justice Edition programming services.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <h3>Alpha Software <i class="fas fa-at"></i></h3>
+            <p>
+                Alpha Software v10.5, v11 and AlphaAnywhere programming services.
+            </p>
+        </div>
     </div>
 </div>
-<br />
-<br />
-<div class="row">
-    <div class="col-md-4">
-        <div class="box" id="box16"></div>
-    </div>
+<div class="full">
+    <div class="jumbotron" id="jumbotron-contact">
+        <h1>Contact</h1>
+        <div class="row">
+            <div class="col-md-4">
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+                    <table>
+                        <tr>
+                            <td>
+                                @Html.TextBoxFor(m => m.FromName, new { placeholder = "Your Name", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.FromName)
+                            </td>
+                        </tr>
+                        <tr class="blank-row"><td></td></tr>
+                        <tr>
+                            <td>
+                                @Html.TextBoxFor(m => m.FromEmail, new { placeholder = "Your Email", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.FromEmail)
+                            </td>
+                        </tr>
+                        <tr class="blank-row"><td></td></tr>
+                        <tr>
+                            <td>
+                                @Html.TextAreaFor(m => m.Message, new { placeholder = "Your Message", id = "form-message", @class = "form-control" })
+                                @Html.ValidationMessageFor(m => m.Message)
+                            </td>
+                        </tr>
+                        <tr class="blank-row"><td></td></tr>
+                        <tr>
+                            <td>
+                                <input type="submit" class="btn btn-primary btn-group-sm" value="Send" />
+                            </td>
+                        </tr>
+                    </table>
+                }
 
-    <div class="col-md-4">
-        <div class="box" id="box17"></div>
-    </div>
+                @section Scripts {
+                    @Scripts.Render("~/bundles/jqueryval")
+                }
+            </div>
+            <div class="col-md-4">
+                <table>
+                    <tr>
+                        <td class="address">
+                            50 St. Clair Ave East, 3rd Floor<br />
+                            Toronto, ON Canada M4T 1M9<br />
+                            416-533-3777
+                        </td>
+                    </tr>
+                    <tr class="blank-row"><td></td></tr>
+                    <tr>
+                        <td>
+                            <a id="contact-email" class="btn btn-primary btn-group-sm" href="mailto:Sales@reainc.net">Sales</a>
+                            <a id="contact-email" class="btn btn-primary btn-group-sm" href="mailto:Support@reainc.net">Support</a>
+                            <a id="contact-email" class="btn btn-primary btn-group-sm" href="mailto:Webmaster@reainc.net">Webmaster</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-    <div class="col-md-4">
-        <div class="box" id="box18"></div>
+        </div>
     </div>
 </div>
-
+<div class="full">
+    <div class="jumbotron" id="jumbotron-careers">
+        <h1>Careers</h1>
+        <p class="lead">Make a difference with us.</p>
+        <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>
+</div>
 
 <style>
     .jumbotron {
-        background: url(../Content/Images/Jumbotron/Code.jpg) no-repeat top left;
         background-size: cover;
     }
 
-    .row {
+    #jumbotron-home {
+        background: url(../Content/Images/Jumbotron/Balloons.jpg) no-repeat top left;
+    }
+
+    #jumbotron-portfolio {
+        background: url(../Content/Images/Jumbotron/Code.jpg) no-repeat top left;
+    }
+
+    #jumbotron-clients {
+        background: url(../Content/Images/Jumbotron/Buildings.jpg) no-repeat top left;
+    }
+
+    #jumbotron-products {
+        background: url(../Content/Images/Jumbotron/Beach.jpg) no-repeat top left;
+    }
+
+    #jumbotron-services {
+        background: url(../Content/Images/Jumbotron/Trees.jpg) no-repeat top left;
+    }
+
+    #jumbotron-contact {
+        background: url(../Content/Images/Jumbotron/Crop.jpg) no-repeat top left;
+    }
+
+    #jumbotron-careers {
+        background: url(../Content/Images/Jumbotron/Plant.jpg) no-repeat top left;
+    }
+
+    #jumbotron-login {
+        background: url(../Content/Images/Jumbotron/PC2.jpg) no-repeat top left;
+    }
+
+    .full {
+        height: 100vh;
+        border: solid red;
+    }
+
+    h3, p.follow {
         text-align: center;
     }
 
-    #box1 {
-        background-image: url("/Content/Images/Portfolio/BingoLottoFun.png");
+    .address {
+        font-size: 18px;
     }
 
-    #box2 {
-        background-image: url("/Content/Images/Portfolio/BodyPulse.jpg");
+    #form-message {
+        min-height: 100px;
     }
 
-    #box3 {
-        background-image: url("/Content/Images/Portfolio/BroadwayHealthAndVitality.jpg");
+    .blank-row {
+        height: 5px !important;
     }
 
-    #box4 {
-        background-image: url("/Content/Images/Portfolio/CarlsonWagonlit1.png");
+    table {
+        width: 100%;
     }
 
-    #box5 {
-        background-image: url("/Content/Images/Portfolio/CaymanFreelancer1.png");
+    #contact-email {
     }
-
-    #box6 {
-        background-image: url("/Content/Images/Portfolio/CreateInfiniteHealing.jpg");
-    }
-
-    #box7 {
-        background-image: url("/Content/Images/Portfolio/FitFix1.png");
-    }
-
-    #box8 {
-        background-image: url("/Content/Images/Portfolio/GICWealthManagement1.png");
-    }
-
-    #box9 {
-        background-image: url("/Content/Images/Portfolio/InMyLanguage.jpg");
-    }
-
-    #box10 {
-        background-image: url("/Content/Images/Portfolio/MyClientSchedule1.jpg");
-    }
-
-    #box11 {
-        background-image: url("/Content/Images/Portfolio/Nettwerk1.png");
-    }
-
-    #box12 {
-        background-image: url("/Content/Images/Portfolio/Pet.jpg");
-    }
-
-    #box13 {
-        background-image: url("/Content/Images/Portfolio/PetPickup1.png");
-    }
-
-    #box14 {
-        background-image: url("/Content/Images/Portfolio/RaceAnalyser.jpg");
-    }
-
-    #box15 {
-        background-image: url("/Content/Images/Portfolio/Revizit1.jpg");
-    }
-
-    #box16 {
-        background-image: url("/Content/Images/Portfolio/SmartChoice.png");
-    }
-
-    #box17 {
-        background-image: url("/Content/Images/Portfolio/Sommers.jpg");
-    }
-
-    #box18 {
-        background-image: url("/Content/Images/Portfolio/VintageCapitalCorporation.jpg");
-    }
-
-    .box {
-        background-size: cover;
-        position: relative;
-        display: inline-block;
-        width: 300px;
-        height: 200px;
-        background-color: #fff;
-        border-radius: 5px;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        border-radius: 5px;
-        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-    }
-
-        .box::after {
-            content: "";
-            border-radius: 5px;
-            position: absolute;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            opacity: 0;
-            -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-        }
-
-        .box:hover {
-            -webkit-transform: scale(1.25, 1.25);
-            transform: scale(1.25, 1.25);
-        }
-
-            .box:hover::after {
-                opacity: 1;
-            }
 </style>
