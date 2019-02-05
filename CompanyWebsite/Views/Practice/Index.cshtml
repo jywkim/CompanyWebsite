@@ -7,7 +7,7 @@
     }
 }
 
-<div class="jumbotron">
+<div class="jumbotron" id="jumbotron-practice">
     @if (Session["userFirstName"] != null)
     {
         <h1>Hi @Session["userFirstName"].ToString()</h1>
@@ -277,39 +277,46 @@
 
 <style>
     .jumbotron {
+        /*background: url(../Content/Images/Jumbotron/Balloons.jpg) no-repeat top left;*/
         background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top left;
+    }
+
+    #jumbotron-practice {
+        background-image: url(../Content/Images/Jumbotron/Code.jpg);
     }
 
     #jumbotron-home {
-        background: url(../Content/Images/Jumbotron/Balloons.jpg) no-repeat top left;
+        background-image: url(../Content/Images/Jumbotron/Balloons.jpg);
     }
 
     #jumbotron-portfolio {
-        background: url(../Content/Images/Jumbotron/Code.jpg) no-repeat top left;
+        background-image: url(../Content/Images/Jumbotron/Code.jpg);
     }
 
     #jumbotron-clients {
-        background: url(../Content/Images/Jumbotron/Buildings.jpg) no-repeat top left;
+        background-image: url(../Content/Images/Jumbotron/Buildings.jpg);
     }
 
     #jumbotron-products {
-        background: url(../Content/Images/Jumbotron/Beach.jpg) no-repeat top left;
+        background-image: url(../Content/Images/Jumbotron/Beach.jpg);
     }
 
     #jumbotron-services {
-        background: url(../Content/Images/Jumbotron/Trees.jpg) no-repeat top left;
+        background-image: url(../Content/Images/Jumbotron/Trees.jpg);
     }
 
     #jumbotron-contact {
-        background: url(../Content/Images/Jumbotron/Crop.jpg) no-repeat top left;
+        background-image: url(../Content/Images/Jumbotron/Crop.jpg);
     }
 
     #jumbotron-careers {
-        background: url(../Content/Images/Jumbotron/Plant.jpg) no-repeat top left;
+        background-image: url(../Content/Images/Jumbotron/Plant.jpg);
     }
 
     #jumbotron-login {
-        background: url(../Content/Images/Jumbotron/PC2.jpg) no-repeat top left;
+        background-image: url(../Content/Images/Jumbotron/PC2.jpg);
     }
 
     .full {
