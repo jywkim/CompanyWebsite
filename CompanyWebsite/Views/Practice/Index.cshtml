@@ -7,6 +7,7 @@
     }
 }
 
+<!--
 <div class="jumbotron" id="jumbotron-practice">
     @if (Session["userFirstName"] != null)
     {
@@ -15,6 +16,7 @@
     <p class="lead">Practice code.</p>
     <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
+-->
 
 <div class="full" id="section-home">
 
@@ -29,7 +31,15 @@
             <a href="#section-services">Services</a>
             <a href="#section-contact">Contact</a>
             <a href="#section-careers">Careers</a>
-            <a href="@Url.Action("Index", "Login")">Login</a>
+            @if (Session["userID"] != null)
+            {
+                <a href="@Url.Action("Logout", "Login")">Logout</a>
+            }
+            else
+            {
+                <a href="@Url.Action("Index", "Login")">Login</a>
+            }
+            
         </div>
 
         <i class="fas fa-bars fa-2x" onclick="openNav()" id="menu-icon"></i>
@@ -614,44 +624,55 @@
     }
 
     /* SIDE NAV MENU */
+    #menu-icon {
+        position: fixed;
+        left: 85%;
+        top: 20%;
+    }
+
     .sidenav {
-      height: 100%;
-      width: 0; 
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      left: 0;
-      background-color: #337ab7;
-      overflow-x: hidden;
-      padding-top: 60px;
-      transition: 0.5s;
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 8%;
+        right: 7.7%;
+        background-color: #337ab7;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 0.5s;
     }
 
     .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: white;
-      display: block;
-      transition: 0.3s;
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
     }
 
     .sidenav a:hover {
-      color: #337ab7;
-      background-color: white;
+        color: #337ab7;
+        background-color: white;
     }
 
     .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*right: 25px;*/
+        font-size: 36px;
+        /*margin-left: 50px;*/
     }
 
     @@media screen and (max-height: 450px) {
-      .sidenav {padding-top: 15px;}
-      .sidenav a {font-size: 18px;}
+        .sidenav {
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            font-size: 18px;
+        }
     }
 
     /*CLIENTS*/
