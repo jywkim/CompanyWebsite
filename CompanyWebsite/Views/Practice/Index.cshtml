@@ -880,7 +880,8 @@
     }
 </style>
 
-<script>
+<script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+<script type="text/javascript">
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
     }
@@ -888,4 +889,16 @@
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
     }
+
+    $(function () {
+        $('div.sidenav a').bind('click', function (event) {
+            event.preventDefault();
+            var $anchor = $(this);
+            console.log($anchor.attr('href'))
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1000);
+            event.preventDefault();
+        });
+    });
 </script>
