@@ -901,4 +901,12 @@
             event.preventDefault();
         });
     });
+
+    $(function () {
+        $(document).on('click', function (e) {
+            if (e.target.id != 'menu-icon') {
+                closeNav();
+            }
+        })
+    });
 </script>
