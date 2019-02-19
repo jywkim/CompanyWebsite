@@ -30,7 +30,6 @@
             <a class="navbar-item" href="#section-products">Products</a>
             <a class="navbar-item" href="#section-services">Services</a>
             <a class="navbar-item" href="#section-contact">Contact</a>
-            <a class="navbar-item" href="#section-careers">Careers</a>
             @if (Session["userID"] != null)
             {
                 <a href="@Url.Action("Logout", "Login")">Logout</a>
@@ -404,8 +403,8 @@
 </div>
 <div class="full" id="section-services">
     <div class="jumbotron" id="jumbotron-services">
-        <h1>Services</h1>
-        <p class="lead">Reach your goals and gain an advantage.</p>
+        <h1>What We Do</h1>
+        <p class="lead">We've got a team that can help you reach your goals and gain an advantage</p>
         <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 
@@ -518,66 +517,6 @@
         </div>
 
     </div>
-</div>
-<div class="full" id="section-careers">
-    <div class="jumbotron" id="jumbotron-careers">
-        <h1>Careers</h1>
-        <p class="lead">Make a difference with us.</p>
-        <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-    </div>
-
-    <p>
-        REA Inc. is always looking for talented developers.
-        <br /><br />
-        Do you have experience programming and building applications? Have you worked with large-scale databases?
-        <br /><br />
-        Here are some of the technologies/services that our clients are requesting:
-    </p>
-    <br />
-    <div class="row">
-        <div class="col-md-3">
-            <p class="follow"><i class="fas fa-laptop-code fa-9x"></i></p>
-            <h3>Languages</h3>
-            <ul>
-                <li>C#, ASP.NET, VB.NET, VB6</li>
-                <li>PHP, Yii Framework</li>
-                <li>Adobe ColdFusion</li>
-                <li>Alpha Software/AlphaAnywhere</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <p class="follow"><i class="fas fa-database fa-9x"></i></p>
-            <h3>Databases</h3>
-            <ul>
-                <li>Microsoft SQL</li>
-                <li>Pervasive SQL</li>
-                <li>MySQL</li>
-                <li>Firebird</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <p class="follow"><i class="fab fa-windows fa-9x"></i></p>
-            <h3>Operating Systems</h3>
-            <ul>
-                <li>Microsoft Server 2003, 2008, 2012</li>
-                <li>Windows XP, 7, 8, 8.1, 10</li>
-                <li>Linux, Apache</li>
-                <li>cPanel, WHM</li>
-            </ul>
-        </div>
-        <div class="col-md-3">
-            <p class="follow"><i class="fas fa-network-wired fa-9x"></i></p>
-            <h3>Other Skills</h3>
-            <ul>
-                <li>Network support and PC Support</li>
-                <li>Graphic Design</li>
-                <li>WordPress</li>
-                <li>Mentoring/Training</li>
-            </ul>
-        </div>
-    </div>
-
-    <h3>Send a cover letter with your resume to <a href="mailto:jobs@reainc.net">jobs@reainc.net</a></h3>
 </div>
 
 <style>
@@ -875,11 +814,6 @@
     }
 
     #contact-email {
-    }
-
-    /*CAREERS*/
-    ul {
-        list-style-type: none;
     }
 </style>
 
