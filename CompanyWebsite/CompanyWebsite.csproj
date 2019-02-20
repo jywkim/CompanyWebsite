@@ -389,6 +389,7 @@
     <Content Include="Views\Home\Sent.cshtml" />
     <Content Include="Views\Practice\Index.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Practice\Demo.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
