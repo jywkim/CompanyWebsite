@@ -30,7 +30,10 @@
     </div>
 </div>
 
-<i class="fas fa-bars fa-2x" onclick="openNav()" id="menu-icon"></i>
+<div id="menu-box" onclick="openNav()">
+    <span id="menu-text">MENU</span>
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+</div>
 
 <div class="full" id="section-home">
 
@@ -567,11 +570,19 @@
     }
 
     /* SIDE NAV MENU */
-    #menu-icon {
+    #menu-box {
         position: fixed;
-        left: 95%;
+        left: 85%;
         top: 5%;
         z-index: 1;
+        background-color: #009FB2;
+        width: 110px;
+        padding: 5px 10px 1px 10px;
+    }
+
+    #menu-text {
+        vertical-align: super;
+        padding-right: 15px;
     }
 
     .nav-footer {
@@ -596,36 +607,36 @@
         transition: 0.5s;
     }
 
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 20px;
-            color: #337ab7;
-            display: block;
-            transition: 0.3s;
-        }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #337ab7;
+        display: block;
+        transition: 0.3s;
+    }
 
-            .sidenav a:hover {
-                color: white;
-                background-color: #337ab7;
-            }
+    .sidenav a:hover {
+        color: white;
+        background-color: #337ab7;
+    }
 
-        .sidenav .closebtn {
-            /*position: absolute;*/
-            /*top: 0;*/
-            /*right: 25px;*/
-            font-size: 36px;
-            /*margin-left: 50px;*/
-        }
+    .sidenav .closebtn {
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*right: 25px;*/
+        font-size: 36px;
+        /*margin-left: 50px;*/
+    }
 
     @@media screen and (max-height: 450px) {
         .sidenav {
             padding-top: 15px;
         }
 
-            .sidenav a {
-                font-size: 15px;
-            }
+        .sidenav a {
+            font-size: 15px;
+        }
     }
 
     /*CLIENTS*/
@@ -839,7 +850,7 @@
 
     $(function () {
         $(document).on('click', function (e) {
-            if (e.target.id != 'menu-icon') {
+            if (e.target.id != 'menu-box' && e.target.id != 'menu-text' && e.target.id != 'menu-icon') {
                 closeNav();
             }
         })
