@@ -445,13 +445,13 @@
 </div>
 <div class="full" id="section-contact">
     <div class="jumbotron" id="jumbotron-contact">
-        <h1>Contact</h1>
-        <p class="lead">Got any questions? Let us help you.</p>
+        <h1>Contact Us</h1>
+        <p class="lead">Got any questions? Reach out and let us help you.</p>
         <p><a href="../Home" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
     </div>
 
     <div class="row" id="contact-row">
-        <div class="col-md-4">
+        <div class="col-md-5">
             @using (Html.BeginForm())
             {
                 @Html.AntiForgeryToken()
@@ -479,7 +479,7 @@
                     <tr class="blank-row"><td></td></tr>
                     <tr>
                         <td>
-                            <input type="submit" class="btn btn-primary btn-group-sm" value="Send" />
+                            <input id="submit-button" type="submit" class="btn btn-primary btn-group-sm" value="Submit" />
                         </td>
                     </tr>
                 </table>
@@ -489,7 +489,7 @@
                 @Scripts.Render("~/bundles/jqueryval")
             }
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
             <table>
                 <tr>
                     <td class="address">
@@ -508,8 +508,8 @@
                 </tr>
             </table>
         </div>
-
     </div>
+    <br />
 </div>
 
 <style>
@@ -824,6 +824,10 @@
             }
 
     /*CONTACT*/
+    #submit-button {
+        width: 100%;
+    }
+
     .address {
         font-size: 18px;
     }
@@ -843,6 +847,17 @@
     #contact-row {
         padding-left: 25%;
         padding-right: 0%;
+    }
+
+    .form-control {
+        border: none;
+        border-radius: unset;
+    }
+
+    .form-control:focus {
+        border-bottom: solid;
+        border-bottom-color: #337ab7;
+        outline-width: 0;
     }
 </style>
 
