@@ -52,7 +52,7 @@ namespace CompanyWebsite.Controllers
                     smtp.Port = 2525;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
-                    return RedirectToAction("Sent", "Home");
+                    return RedirectToAction("Sent");
                 }
             }
             return View(model);
@@ -62,7 +62,7 @@ namespace CompanyWebsite.Controllers
         {
             if (Request.UrlReferrer == null)
             {
-                return RedirectToAction("Contact", "Home");
+                return RedirectToAction("Demo");
             }
 
             return View();
