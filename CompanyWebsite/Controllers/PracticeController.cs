@@ -24,6 +24,7 @@ namespace CompanyWebsite.Controllers
             return View();
         }
 
+        //CONTACT
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Demo(EmailFormModel model)
@@ -66,6 +67,39 @@ namespace CompanyWebsite.Controllers
             }
 
             return View();
+        }
+
+        //LOGIN
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Authorize(User user)
+        {
+            using (CompanyWebsiteEntities db = new CompanyWebsiteEntities())
+            {
+                var userDetails = db.Users.Where(x => x.UserName == user.UserName && x.UserPass == user.UserPass).FirstOrDefault();
+                if (userDetails == null)
+                {
+                    return RedirectToAction("Login", "Practice");
+                }
+                else
+                {
+                    Session["userID"] = userDetails.UserID;
+                    Session["userName"] = userDetails.UserName;
+                    Session["userFirstName"] = userDetails.UserFirstName;
+                    return RedirectToAction("Demo", "Practice");
+                }
+            }
+        }
+
+        public ActionResult Logout()
+        {
+            int userId = (int)Session["userID"];
+            Session.Abandon();
+            return RedirectToAction("Demo", "Practice");
         }
     }
 }
