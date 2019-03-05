@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
 using CompanyWebsite.Auth;
+using CompanyWebsite.Helpers;
 
 namespace CompanyWebsite.Controllers
 {
@@ -53,7 +54,8 @@ namespace CompanyWebsite.Controllers
                     smtp.Port = 2525;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
-                    return RedirectToAction("Sent");
+                    AppHelper.SetFlash(MessageType.SUCCESS, "Message Sent!");
+                    return RedirectToAction("Demo");
                 }
             }
             return View(model);

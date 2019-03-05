@@ -189,6 +189,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\AppHelper.cs" />
+    <Compile Include="Helpers\Flash.cs" />
+    <Compile Include="Helpers\MessageType.cs" />
     <Compile Include="Models\CompanyWebsiteModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
