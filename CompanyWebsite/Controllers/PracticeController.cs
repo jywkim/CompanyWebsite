@@ -92,7 +92,8 @@ namespace CompanyWebsite.Controllers
                     Session["userID"] = userDetails.UserID;
                     Session["userName"] = userDetails.UserName;
                     Session["userFirstName"] = userDetails.UserFirstName;
-                    return RedirectToAction("Demo", "Practice");
+                    AppHelper.SetFlash(MessageType.SUCCESS, "Hi " + userDetails.UserFirstName + "!");
+                    return RedirectToAction("Demo");
                 }
             }
         }
@@ -101,7 +102,7 @@ namespace CompanyWebsite.Controllers
         {
             int userId = (int)Session["userID"];
             Session.Abandon();
-            return RedirectToAction("Demo", "Practice");
+            return RedirectToAction("Demo");
         }
     }
 }
