@@ -901,4 +901,20 @@
             }
         })
     });
+
+    function moveUp(container, object, speed) {
+        var speed = 1200 || speed;
+
+        container.css("position", "relative");
+        object.css("position", "absolute");
+        object.css("top", container.height() + "px");
+        object.css("opacity", "0");
+
+        object.animate({
+            top: 60,
+            opacity: 1
+        }, speed);
+    }
+
+    moveUp($("#jumbotron-home"), $("#home-paragraph"));
 </script>
