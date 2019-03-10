@@ -11,6 +11,7 @@
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <a class="navbar-item" href="#section-home">Home</a>
+    <a class="navbar-item" href="#section-about">About</a>
     <a class="navbar-item" href="#section-portfolio">Portfolio</a>
     <a class="navbar-item" href="#section-clients">Clients</a>
     <a class="navbar-item" href="#section-products">Products</a>
@@ -57,32 +58,37 @@
     </div>
     <br />
     <br />
-    <p class="lead" id="home-title">
-        REA Inc.
-    </p>
-    <br />
-    <p id="about-paragraph">
-        REA Inc. does more than just sell technology – we combine small business and technology
-        consulting expertise to develop IT solutions to your real business challenges.
-    </p>
-    <br />
-    <br />
-    <div class="row" id="row-home">
-        <div class="col-md-3">
-            <p class="follow"><i class="fas fa-comments fa-9x"></i></p>
-            <h3>IT Consulting</h3>
-        </div>
-        <div class="col-md-3">
-            <p class="follow"><i class="fas fa-code fa-9x"></i></p>
-            <h3>Website Design</h3>
-        </div>
-        <div class="col-md-3">
-            <p class="follow"><i class="fas fa-table fa-9x"></i></p>
-            <h3>Application Design</h3>
-        </div>
-        <div class="col-md-3">
-            <p class="follow"><i class="fas fa-memory fa-9x"></i></p>
-            <h3>Hardware Installation</h3>
+    <div id="section-about">
+        <br />
+        <br />
+        <br />
+        <p class="lead" id="home-title">
+            REA Inc.
+        </p>
+        <br />
+        <p id="about-paragraph">
+            REA Inc. does more than just sell technology – we combine small business and technology
+            consulting expertise to develop IT solutions to your real business challenges.
+        </p>
+        <br />
+        <br />
+        <div class="row" id="row-home">
+            <div class="col-md-3">
+                <p class="follow"><i class="fas fa-comments fa-9x"></i></p>
+                <h3>IT Consulting</h3>
+            </div>
+            <div class="col-md-3">
+                <p class="follow"><i class="fas fa-code fa-9x"></i></p>
+                <h3>Website Design</h3>
+            </div>
+            <div class="col-md-3">
+                <p class="follow"><i class="fas fa-table fa-9x"></i></p>
+                <h3>Application Design</h3>
+            </div>
+            <div class="col-md-3">
+                <p class="follow"><i class="fas fa-memory fa-9x"></i></p>
+                <h3>Hardware Installation</h3>
+            </div>
         </div>
     </div>
 </div>
@@ -542,6 +548,11 @@
         background-image: url(../Content/Images/Jumbotron/Balloons2.jpg);
         height: 100%;
         background-attachment: fixed;
+        margin-bottom: 0rem;
+    }
+
+    #section-about {
+        margin-top: -48px;
     }
 
     #row-home {
