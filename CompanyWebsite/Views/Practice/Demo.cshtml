@@ -75,6 +75,23 @@
         <br />
         <br />
         <div class="row" id="row-home">
+            <div class="col-md-3 stats">
+                <div class="counting" data-count="1000">0</div>
+                <h3>Cups of Coffee</h3>
+            </div>
+            <div class="col-md-3 stats">
+                <div class="counting" data-count="100">0</div>
+                <h3>Projects Completed</h3>
+            </div>
+            <div class="col-md-3 stats">
+                <div class="counting" data-count="30">0</div>
+                <h3>Happy Clients</h3>
+            </div>
+            <div class="col-md-3 stats">
+                <div class="counting" data-count="7">0</div>
+                <h3>Developers</h3>
+            </div>
+            <!--
             <div class="col-md-3">
                 <p class="follow"><i class="fas fa-comments fa-9x"></i></p>
                 <h3>IT Consulting</h3>
@@ -91,6 +108,7 @@
                 <p class="follow"><i class="fas fa-memory fa-9x"></i></p>
                 <h3>Hardware Installation</h3>
             </div>
+            -->
         </div>
     </div>
 </div>
@@ -621,6 +639,12 @@
         height: 55%;
     }
 
+    .stats {
+        text-align: center;
+        font-size: 70px;
+        font-weight: bold;
+    }
+
     /*HOME AND CAREERS COLUMNS*/
     h3, p.follow {
         text-align: center;
@@ -1096,4 +1120,26 @@
     }
 
     moveUp($("#jumbotron-home"), $("#home-paragraph"));
+
+    $('.counting').each(function () {
+        var $this = $(this),
+            countTo = $this.attr('data-count');
+
+        $({ countNum: $this.text() }).animate({
+            countNum: countTo
+        },
+
+            {
+
+                duration: 3000,
+                easing: 'linear',
+                step: function () {
+                    $this.text(Math.floor(this.countNum));
+                },
+                complete: function () {
+                    $this.text(this.countNum);
+                }
+
+            });
+    });
 </script>
