@@ -128,43 +128,55 @@
     <div class="row justify-content-center">
         <div class="col-md-5">
             <h3 class="service-heading">IT Consulting <i class="fas fa-comments"></i></h3>
-            <p>
+            <br />
+            <p class="service-paragraph">
                 Our dedicated team of programmers and analysts provide high-quality and skilled support in a timely manner.
                 We prevent problems, put out fires, and everything in between in order to help you move your business forward.
             </p>
+            <br />
         </div>
         <div class="col-md-5">
             <h3 class="service-heading">Application Design <i class="fas fa-table"></i></h3>
-            <p>
+            <br />
+            <p class="service-paragraph">
                 Our experts can design a new IT infrastructure for your company or simply add to and improve your existing one.
                 We help make the correct decisions in each phase and offer robust, state of the art application design solutions.
             </p>
+            <br />
         </div>
         <div class="col-md-5">
             <h3 class="service-heading">Programming Skills <i class="fas fa-code"></i></h3>
-            <p>
-                We have experience in many programming languages and frameworks including Microsoft C# .NET, ASP.NET MVC, C++, 
+            <br />
+            <p class="service-paragraph">
+                We have experience in many programming languages and frameworks including Microsoft C# .NET, ASP.NET MVC, C++,
                 Visual Basic .NET, Visual Basic 6, PHP, Adobe ColdFusion, MySQL, Microsoft SQL, Pervasive PSQL, and Crystal Reports.
             </p>
+            <br />
         </div>
         <div class="col-md-5">
             <h3 class="service-heading">Troubleshooting <i class="fas fa-search"></i></h3>
-            <p>
+            <br />
+            <p class="service-paragraph">
                 We can take care of all the proper security measures to protect your data from any unauthorized access or attacks.
                 Assessments can determine the weaknesses that could be exploited leading to system vulnerabilities.
             </p>
+            <br />
         </div>
         <div class="col-md-5">
             <h3 class="service-heading">Sustain <i class="fas fa-gavel"></i></h3>
-            <p>
+            <br />
+            <p class="service-paragraph">
                 We provide Sustain Justice Edition case management system application, configuration, and interface support.
             </p>
+            <br />
         </div>
         <div class="col-md-5">
             <h3 class="service-heading">Alpha <i class="fas fa-at"></i></h3>
-            <p>
+            <br />
+            <p class="service-paragraph">
                 We provide programming services for most versions of Alpha Software including Alpha Five and Alpha Anywhere.
             </p>
+            <br />
         </div>
     </div>
     </br>
@@ -648,6 +660,7 @@
 
     .service-heading {
         font-weight: bold;
+        font-size: 2rem;
     }
 
     /*HOME AND CAREERS COLUMNS*/
@@ -672,6 +685,10 @@
         padding-right: 23%;
     }
 
+    .service-paragraph {
+        font-size: 1.2rem;
+    }
+
     /* SIDE NAV MENU */
     #menu-box {
         position: fixed;
@@ -684,9 +701,9 @@
         cursor: pointer;
     }
 
-        #menu-box:hover {
-            /*color: #009FB2;*/
-        }
+    #menu-box:hover {
+        /*color: #009FB2;*/
+    }
 
     #menu-text {
         vertical-align: super;
@@ -715,36 +732,36 @@
         transition: 0.5s;
     }
 
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 20px;
-            color: #337ab7;
-            display: block;
-            transition: 0.3s;
-        }
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #337ab7;
+        display: block;
+        transition: 0.3s;
+    }
 
-            .sidenav a:hover {
-                color: white;
-                background-color: #337ab7;
-            }
+    .sidenav a:hover {
+        color: white;
+        background-color: #337ab7;
+    }
 
-        .sidenav .closebtn {
-            /*position: absolute;*/
-            /*top: 0;*/
-            /*right: 25px;*/
-            font-size: 36px;
-            /*margin-left: 50px;*/
-        }
+    .sidenav .closebtn {
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*right: 25px;*/
+        font-size: 36px;
+        /*margin-left: 50px;*/
+    }
 
     @@media screen and (max-height: 450px) {
         .sidenav {
             padding-top: 15px;
         }
 
-            .sidenav a {
-                font-size: 15px;
-            }
+        .sidenav a {
+            font-size: 15px;
+        }
     }
 
     .row {
