@@ -1,0 +1,30 @@
+[1mdiff --git a/CompanyWebsite/Views/Practice/Demo.cshtml b/CompanyWebsite/Views/Practice/Demo.cshtml[m
+[1mindex d150e7b..5f37cfd 100644[m
+[1m--- a/CompanyWebsite/Views/Practice/Demo.cshtml[m
+[1m+++ b/CompanyWebsite/Views/Practice/Demo.cshtml[m
+[36m@@ -504,16 +504,11 @@[m
+         margin-top: -48px;[m
+     }[m
+ [m
+[31m-    #section-services {[m
+[32m+[m[32m    #section-contact {[m
+         /*height: 100%;*/[m
+         background-color: #e6e6e6;[m
+     }[m
+ [m
+[31m-    #section-contact {[m
+[31m-        background-color: black;[m
+[31m-        color: white;[m
+[31m-    }[m
+[31m-[m
+     .portfolio-headers {[m
+         font-weight: bold;[m
+     }[m
+[36m@@ -916,7 +911,6 @@[m
+ [m
+     .address {[m
+         font-size: 18px;[m
+[31m-        color: white;[m
+     }[m
+ [m
+     #form-message {[m
