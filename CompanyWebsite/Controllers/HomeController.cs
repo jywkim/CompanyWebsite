@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
 using CompanyWebsite.Auth;
+using CompanyWebsite.Helpers;
 
 namespace CompanyWebsite.Controllers
 {
@@ -18,39 +19,10 @@ namespace CompanyWebsite.Controllers
             return View();
         }
 
-        public ActionResult Portfolio()
-        {
-            return View();
-        }
-
-        public ActionResult Clients()
-        {
-            return View();
-        }
-
-        public ActionResult Products()
-        {
-            return View();
-        }
-
-        public ActionResult Services()
-        {
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            return View();
-        }
-
-        public ActionResult Careers()
-        {
-            return View();
-        }
-
+        //CONTACT
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Contact(EmailFormModel model)
+        public async Task<ActionResult> Index(EmailFormModel model)
         {
             if (ModelState.IsValid)
             {
@@ -76,7 +48,8 @@ namespace CompanyWebsite.Controllers
                     smtp.Port = 2525;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
-                    return RedirectToAction("Sent");
+                    AppHelper.SetFlash(MessageType.SUCCESS, "Message Sent!");
+                    return RedirectToAction("Index");
                 }
             }
             return View(model);
@@ -86,10 +59,44 @@ namespace CompanyWebsite.Controllers
         {
             if (Request.UrlReferrer == null)
             {
-                return RedirectToAction("Contact");
+                return RedirectToAction("Index");
             }
 
             return View();
+        }
+
+        //LOGIN
+        public ActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Authorize(User user)
+        {
+            using (CompanyWebsiteEntities db = new CompanyWebsiteEntities())
+            {
+                var userDetails = db.Users.Where(x => x.UserName == user.UserName && x.UserPass == user.UserPass).FirstOrDefault();
+                if (userDetails == null)
+                {
+                    return RedirectToAction("Login", "Home");
+                }
+                else
+                {
+                    Session["userID"] = userDetails.UserID;
+                    Session["userName"] = userDetails.UserName;
+                    Session["userFirstName"] = userDetails.UserFirstName;
+                    AppHelper.SetFlash(MessageType.SUCCESS, "Hi " + userDetails.UserFirstName + "!");
+                    return RedirectToAction("Index");
+                }
+            }
+        }
+
+        public ActionResult Logout()
+        {
+            int userId = (int)Session["userID"];
+            Session.Abandon();
+            return RedirectToAction("Index");
         }
     }
 }
