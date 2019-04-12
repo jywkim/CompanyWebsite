@@ -1,33 +1,465 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿body, html {
+    overflow-x: hidden;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+.back-to-top {
+    position: fixed;
+    bottom: 2em;
+    right: 30px;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(235, 235, 235, 0.80);
+    font-size: 12px;
+    padding: 1em;
+    display: none;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
-}
-
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
-}
+    .back-to-top:hover {
+        background-color: #007bff;
+        text-decoration: none;
+        color: white;
+    }
 
 @font-face {
     font-family: 'SFProDisplay-Light';
     src: url('/fonts/SF/SFProDisplay-Light.ttf') format("truetype");
 }
 
+@font-face {
+    font-family: 'SFProDisplay-Medium';
+    src: url('/fonts/SF/SFProDisplay-Medium.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Heavy';
+    src: url('/fonts/SF/SFProDisplay-Heavy.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Bold';
+    src: url('/fonts/SF/SFProDisplay-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Black';
+    src: url('/fonts/SF/SFProDisplay-Black.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Regular';
+    src: url('/fonts/SF/SFProDisplay-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Semibold';
+    src: url('/fonts/SF/SFProDisplay-Semibold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Thin';
+    src: url('/fonts/SF/SFProDisplay-Thin.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'SFProDisplay-Ultralight';
+    src: url('/fonts/SF/SFProDisplay-Ultralight.ttf') format("truetype");
+}
+
+.alert {
+    width: 75%;
+    margin-left: 10%;
+    top: 1px;
+    position: absolute;
+}
+
 * {
     font-family: 'SFProDisplay-Light';
 }
+
+.jumbotron {
+    /*background: url(../Content/Images/Jumbotron/Balloons.jpg) no-repeat top left;*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+/*SECTION JUMBOTRONS*/
+#jumbotron-home {
+    background-image: url(../Content/Images/Jumbotron/Balloons2.jpg);
+    height: 786px;
+    background-attachment: fixed;
+    margin-bottom: 0rem;
+}
+
+#section-about {
+    margin-top: -48px;
+}
+
+#section-contact {
+    /*height: 100%;*/
+    background-color: #e6e6e6;
+}
+
+.portfolio-headers {
+    font-weight: bold;
+}
+
+#row-home {
+    height: 55%;
+}
+
+.stats {
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.counting {
+    font-family: SFProDisplay-Bold;
+}
+
+.service-heading {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contact-bold {
+    font-family: SFProDisplay-Medium;
+}
+
+/*HOME AND CAREERS COLUMNS*/
+h3, p.follow {
+    text-align: center;
+}
+
+#home-paragraph {
+    font-size: 4rem;
+    font-family: SFProDisplay-Regular;
+}
+
+#home-title {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#services-title {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.section-paragraph {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 23%;
+    padding-right: 23%;
+}
+
+.services-description {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.service-paragraph {
+    font-size: 1.2rem;
+}
+
+/* SIDE NAV MENU */
+#menu-box {
+    position: fixed;
+    left: 90%;
+    top: 5%;
+    z-index: 1;
+    /*background-color: #009FB2;*/
+    width: 110px;
+    padding: 5px 10px 1px 10px;
+    cursor: pointer;
+}
+
+    #menu-box:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+#menu-text {
+    vertical-align: super;
+    padding-right: 15px;
+}
+
+.nav-footer {
+    color: #337ab7;
+    margin: auto;
+    display: table;
+    position: absolute;
+    bottom: 10%;
+    text-align: center;
+    right: 20%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0%;
+    right: 0%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #337ab7;
+        display: block;
+        transition: 0.3s;
+    }
+
+        .sidenav a:hover {
+            color: white;
+            background-color: #337ab7;
+        }
+
+    .sidenav .closebtn {
+        /*position: absolute;*/
+        /*top: 0;*/
+        /*right: 25px;*/
+        font-size: 36px;
+        /*margin-left: 50px;*/
+    }
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+        .sidenav a {
+            font-size: 15px;
+        }
+}
+
+.row {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+/*CLIENTS*/
+#clients-row {
+    text-align: center;
+}
+
+#client-box1 {
+    background-image: url("/Content/Images/Clients/CarlsonWagonlit2.png");
+}
+
+#client-box2 {
+    background-image: url("/Content/Images/Clients/AmericanPool.jpg");
+}
+
+#client-box3 {
+    background-image: url("/Content/Images/Clients/AccuPoint.png");
+}
+
+#client-box4 {
+    background-image: url("/Content/Images/Clients/AttorneyGeneral.png");
+}
+
+#client-box5 {
+    background-image: url("/Content/Images/Clients/ChildrenCommunitySocialServices.png");
+}
+
+#client-box6 {
+    background-image: url("/Content/Images/Clients/LondonHealthSciencesCentre.JPG");
+}
+
+#client-box7 {
+    background-image: url("/Content/Images/Clients/CSG.png");
+}
+
+#client-box8 {
+    background-image: url("/Content/Images/Clients/GIC.png");
+}
+
+#client-box9 {
+    background-image: url("/Content/Images/Clients/CanadianChildrenBook1.png");
+}
+
+#client-box10 {
+    background-image: url("/Content/Images/Clients/BenchmarkSoftware.JPG");
+}
+
+#client-box11 {
+    background-image: url("/Content/Images/Clients/Coldiron.png");
+}
+
+#client-box12 {
+    background-image: url("/Content/Images/Clients/BidMyTrucks.png");
+}
+
+#client-box13 {
+    background-image: url("/Content/Images/Clients/Nettwerk2.png");
+}
+
+#client-box14 {
+    background-image: url("/Content/Images/Clients/Roghnu.png");
+}
+
+#client-box15 {
+    background-image: url("/Content/Images/Clients/ADCO.png");
+}
+
+#client-box16 {
+    background-image: url("/Content/Images/Clients/BroadwayHealth.png");
+}
+
+#client-box17 {
+    background-image: url("/Content/Images/Clients/MassageTherapyStudio.png");
+}
+
+#client-box18 {
+    background-image: url("/Content/Images/Clients/WCCMA.jpg");
+}
+
+#client-box19 {
+    background-image: url("/Content/Images/Clients/OCASI.png");
+}
+
+#client-box20 {
+    background-image: url("/Content/Images/Clients/AFS.png");
+}
+
+#client-box21 {
+    background-image: url("/Content/Images/Clients/SumoLounge.jpg");
+}
+
+#client-box22 {
+    background-image: url("/Content/Images/Clients/AndersonCommericalProperty.jpg");
+}
+
+#client-box23 {
+    background-image: url("/Content/Images/Clients/AlphaToGo.jpg");
+}
+
+#client-box24 {
+    background-image: url("/Content/Images/Clients/SmartChoice.png");
+}
+
+#client-box25 {
+    background-image: url("/Content/Images/Clients/SommersLaw.gif");
+}
+
+#client-box26 {
+    background-image: url("/Content/Images/Clients/CoastalSecurity.JPG");
+}
+
+#client-box27 {
+    background-image: url("/Content/Images/Clients/ISE.png");
+}
+
+#client-box28 {
+    background-image: url("/Content/Images/Clients/CentralRoof2.jpg");
+}
+
+#client-box29 {
+    background-image: url("/Content/Images/Clients/PetPickup.png");
+}
+
+#client-box30 {
+    background-image: url("/Content/Images/Clients/CBP.jpg");
+}
+
+.box {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 134px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.clients-carousel {
+    margin: 60px auto;
+    width: 75%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: black;
+}
+
+/*
+    .box::after {
+        content: "";
+        border-radius: 5px;
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+        transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .box:hover {
+        -webkit-transform: scale(1.25, 1.25);
+        transform: scale(1.25, 1.25);
+    }
+
+    .box:hover::after {
+        opacity: 1;
+    }
+    */
+
+/*CONTACT*/
+#submit-button {
+    width: 100%;
+}
+
+.address {
+    font-size: 18px;
+}
+
+#form-message {
+    min-height: 155px;
+}
+
+.blank-row {
+    height: 5px !important;
+}
+
+table {
+    width: 100%;
+}
+
+#contact-row {
+    padding-left: 25%;
+    padding-right: 0%;
+}
+
+.form-control {
+    border: none;
+    border-radius: unset;
+}
+
+    .form-control:focus {
+        border-bottom: solid;
+        border-bottom-color: #337ab7;
+        outline-width: 0;
+    }
+
