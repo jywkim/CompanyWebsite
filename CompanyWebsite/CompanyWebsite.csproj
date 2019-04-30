@@ -268,6 +268,7 @@
     <Content Include="Content\Images\Jumbotron\PC2.jpg" />
     <Content Include="Content\Images\Jumbotron\PC3.jpg" />
     <Content Include="Content\Images\Jumbotron\Trees.jpg" />
+    <Content Include="Content\Images\Map.JPG" />
     <Content Include="Content\Images\Portfolio\BingoLottoFun.png" />
     <Content Include="Content\Images\Portfolio\BodyPulse.jpg" />
     <Content Include="Content\Images\Portfolio\BroadwayHealthAndVitality.jpg" />
