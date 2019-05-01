@@ -462,3 +462,9 @@ table {
         border-bottom-color: #337ab7;
         outline-width: 0;
     }
+
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
