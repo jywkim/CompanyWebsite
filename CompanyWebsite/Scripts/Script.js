@@ -99,3 +99,12 @@ jQuery(document).ready(function () {
         return false;
     })
 });
+
+function initMap() {
+    var rea = { lat: -25.344, lng: 131.036 };
+
+    var map = new google.maps.Map(
+        document.getElementById('map'), { zoom: 4, center: rea });
+
+    var marker = new google.maps.Marker({ position: rea, map: map });
+}
