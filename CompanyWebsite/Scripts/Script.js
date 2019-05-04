@@ -101,7 +101,7 @@ jQuery(document).ready(function () {
 });
 
 function initMap() {
-    var rea = { lat: -25.344, lng: 131.036 };
+    var rea = { lat: 43.688837, lng: -79.391874 };
 
     var map = new google.maps.Map(
         document.getElementById('map'), { zoom: 4, center: rea });
