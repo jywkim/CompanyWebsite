@@ -48,7 +48,7 @@ namespace CompanyWebsite.Controllers
                     smtp.Port = 2525;
                     smtp.EnableSsl = true;
                     await smtp.SendMailAsync(message);
-                    AppHelper.SetFlash(MessageType.SUCCESS, "Message Sent!");
+                    AppHelper.SetFlash(MessageType.SUCCESS, "Thank you for your message!");
                     return RedirectToAction("Index");
                 }
             }
@@ -86,7 +86,7 @@ namespace CompanyWebsite.Controllers
                     Session["userID"] = userDetails.UserID;
                     Session["userName"] = userDetails.UserName;
                     Session["userFirstName"] = userDetails.UserFirstName;
-                    AppHelper.SetFlash(MessageType.SUCCESS, "Hi " + userDetails.UserFirstName + "!");
+                    AppHelper.SetFlash(MessageType.SUCCESS, "Hey " + userDetails.UserFirstName + "!");
                     return RedirectToAction("Index");
                 }
             }
